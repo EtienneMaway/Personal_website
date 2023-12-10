@@ -1,0 +1,47 @@
+/** @format */
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	// background-color: #fff;
+	color: black;
+
+	.bg {
+		position: fixed;
+		width: 250px;
+		height: 70%;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		z-index: 9999;
+		background: rgb(172, 170, 170);
+		border-bottom-right-radius: 50%;
+
+		.links {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
+			font-size: 30px;
+			// font-weight: bold;
+		}
+
+		button {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			position: fixed;
+			top: 25px;
+			left: 25px;
+			border: none;
+			background-color: transparent;
+			cursor: pointer;
+		}
+	}
+}
