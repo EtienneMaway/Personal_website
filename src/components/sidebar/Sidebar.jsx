@@ -22,7 +22,7 @@ const Sidebar = () => {
 			transition: {
 				delay: 0,
 				type: "spring",
-				stiffness: 200,
+				stiffness: 300,
 				damping: 40,
 			},
 		},
@@ -30,7 +30,7 @@ const Sidebar = () => {
 
 	return (
 		<motion.div className='sidebar' animate={open ? "open" : "closed"}>
-			<motion.div className='bg' variants={variants}>
+			<motion.div className='sidebarBoard' variants={variants}>
 				<Links />
 
 				<ToggleButton setOpen={setOpen} />

@@ -55,17 +55,24 @@
 	.slidingContainer {
 		position: absolute;
 		font-size: 50vh;
+		bottom: -100px;
+		white-space: nowrap;
+		color: #ffffff09;
+		width: 200%;
+		font-weight: bold;
 	}
 
 	.imageContainer {
 		height: 100%;
+		// width: 40%;
 		position: absolute;
 		top: 0;
-		right: 0;
+		right: 2%;
 
 		img {
-			max-width: 500px;
 			align-self: center;
+			width: 600px;
+			object-fit: cover;
 		}
 	}
 }
