@@ -29,10 +29,7 @@ const Services = () => {
 			className='services'
 			variants={variants}
 			initial='initial'
-			// animate='animate'
-			// animate={isInView && "animate"}
 			whileInView='animate'
-			// ref={ref}
 		>
 			<motion.div className='textContainer' variants={variants}>
 				<p>
@@ -72,12 +69,21 @@ const Services = () => {
 			</motion.div>
 
 			<motion.div className='listContainer' variants={variants}>
+				<motion.div className='box'>
+					<h2>Branding</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam
+						officia odio obcaecati dolor ullam ea minima dolorum quidem
+						accusamus!
+					</p>
+					<button>Go</button>
+				</motion.div>
 				<motion.div
 					className='box'
-					whileHover={{
-						backgroundColor: "lightgray",
-						color: "#000",
-					}}
+					// whileHover={{
+					// 	backgroundColor: "lightgray",
+					// 	color: "#000",
+					// }}
 				>
 					<h2>Branding</h2>
 					<p>
@@ -89,10 +95,10 @@ const Services = () => {
 				</motion.div>
 				<motion.div
 					className='box'
-					whileHover={{
-						backgroundColor: "lightgray",
-						color: "#000",
-					}}
+					// whileHover={{
+					// 	backgroundColor: "lightgray",
+					// 	color: "#000",
+					// }}
 				>
 					<h2>Branding</h2>
 					<p>
@@ -104,25 +110,10 @@ const Services = () => {
 				</motion.div>
 				<motion.div
 					className='box'
-					whileHover={{
-						backgroundColor: "lightgray",
-						color: "#000",
-					}}
-				>
-					<h2>Branding</h2>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam
-						officia odio obcaecati dolor ullam ea minima dolorum quidem
-						accusamus!
-					</p>
-					<button>Go</button>
-				</motion.div>
-				<motion.div
-					className='box'
-					whileHover={{
-						backgroundColor: "lightgray",
-						color: "#000",
-					}}
+					// whileHover={{
+					// 	backgroundColor: "lightgray",
+					// 	color: "#000",
+					// }}
 				>
 					<h2>Branding</h2>
 					<p>

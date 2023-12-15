@@ -1,4 +1,6 @@
 /** @format */
+@import "../../app.scss";
+
 .sidebar {
 	// display: flex;
 	// flex-direction: column;
@@ -9,14 +11,19 @@
 
 	.sidebarBoard {
 		position: fixed;
-		width: 250px;
-		// height: 100%;
+		width: 400px;
+
 		top: 0;
 		left: 0;
 		bottom: 0;
 		z-index: 9999;
 		background: lightgray;
 		border-bottom-right-radius: 50%;
+
+		@include mobile {
+			width: 50%;
+			border-radius: 0;
+		}
 
 		.links {
 			position: absolute;
@@ -27,7 +34,11 @@
 			justify-content: center;
 			align-items: center;
 			gap: 20px;
-			font-size: 30px;
+			font-size: 40px;
+
+			@include mobile {
+				font-size: 25px;
+			}
 		}
 
 		.links a:hover {

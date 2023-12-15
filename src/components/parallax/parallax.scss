@@ -1,5 +1,5 @@
 /** @format */
-
+@import "../../app.scss";
 .parallax {
 	width: 100%;
 	height: 100%;
@@ -11,6 +11,11 @@
 
 	h1 {
 		font-size: 100px;
+
+		@include mobile {
+			font-size: 88px;
+			text-align: center;
+		}
 	}
 
 	.mountains {
@@ -21,6 +26,11 @@
 		background-position: bottom;
 		background-size: cover;
 		z-index: 3;
+
+		@include mobile {
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
 	}
 	.planets {
 		background-image: url("/planets.png");
@@ -30,6 +40,11 @@
 		background-position: bottom;
 		background-size: cover;
 		z-index: 2;
+
+		@include mobile {
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
 	}
 	.stars {
 		background-image: url("/stars.png");
@@ -39,5 +54,9 @@
 		background-position: bottom;
 		background-size: cover;
 		z-index: 1;
+
+		@include mobile {
+			background-size: contain;
+		}
 	}
 }

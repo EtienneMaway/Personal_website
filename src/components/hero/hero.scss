@@ -1,4 +1,5 @@
 /** @format */
+@import "../../app.scss";
 
 .hero {
 	height: calc(100dvh - 100px);
@@ -12,7 +13,7 @@
 		margin: auto;
 
 		.textContainer {
-			width: 50%;
+			width: 80%;
 			height: 100%;
 			display: flex;
 			flex-direction: column;
@@ -46,8 +47,15 @@
 				}
 			}
 
-			img {
-				cursor: pointer;
+			@include mobile {
+				width: 100%;
+				height: 50%;
+				align-items: center;
+				gap: 20px;
+
+				h1 {
+					font-size: 36px;
+				}
 			}
 		}
 	}
@@ -60,6 +68,12 @@
 		color: #ffffff09;
 		width: 200%;
 		font-weight: bold;
+
+		@include mobile {
+			font-size: 35vh;
+			bottom: 0;
+			width: 385%;
+		}
 	}
 
 	.imageContainer {
@@ -67,12 +81,24 @@
 		// width: 40%;
 		position: absolute;
 		top: 0;
-		right: 2%;
+		right: 0;
 
 		img {
-			align-self: center;
-			width: 600px;
+			height: 100%;
 			object-fit: cover;
+		}
+
+		@include mobile {
+			width: 100%;
+			height: 50%;
+			top: unset;
+			bottom: 0;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
 		}
 	}
 }
