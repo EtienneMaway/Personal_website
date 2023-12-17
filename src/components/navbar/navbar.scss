@@ -2,7 +2,12 @@
 @import "../../app.scss";
 .navbar {
 	height: 100px;
-	// z-index: 100;
+	padding: 20px;
+
+	@include miniLaptop {
+		padding-left: 90px;
+		padding-right: 20px;
+	}
 
 	.wrapper {
 		height: 100%;
@@ -11,6 +16,11 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+
+		@include tablet {
+			justify-content: end;
+			padding-right: 20px;
+		}
 
 		@include mobile {
 			justify-content: right;
@@ -21,6 +31,9 @@
 	span {
 		font-weight: bold;
 
+		@include tablet {
+			display: none;
+		}
 		@include mobile {
 			display: none;
 		}

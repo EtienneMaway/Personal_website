@@ -47,13 +47,13 @@ section {
 		@content;
 	}
 }
-@mixin Tablet {
+@mixin tablet {
 	@media (max-width: 840px) {
 		@content;
 	}
 }
-@mixin Desktop {
-	@media (max-width: 1280px) {
+@mixin miniLaptop {
+	@media (max-width: 1000px) {
 		@content;
 	}
 }

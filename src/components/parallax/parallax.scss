@@ -12,6 +12,10 @@
 	h1 {
 		font-size: 100px;
 
+		@include miniLaptop {
+			font-size: 80px;
+		}
+
 		@include mobile {
 			font-size: 88px;
 			text-align: center;

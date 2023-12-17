@@ -8,9 +8,21 @@
 	max-width: 1200px;
 	margin: auto;
 
+	@include tablet {
+		padding: 20px;
+	}
+
+	@include miniLaptop {
+		padding: 20px;
+	}
+
 	h1 {
 		color: orange;
 		text-align: center;
+
+		@include miniLaptop {
+			font-size: 58px;
+		}
 	}
 
 	.progress {
@@ -82,6 +94,10 @@
 			h2 {
 				font-size: 72px;
 
+				@include miniLaptop {
+					font-size: 64px;
+				}
+
 				@include mobile {
 					font-size: 36px;
 				}
@@ -90,6 +106,10 @@
 			p {
 				font-size: 20px;
 				color: lightgray;
+
+				@include miniLaptop {
+					font-size: 20px;
+				}
 
 				@include mobile {
 					font-size: 16px;
