@@ -1,5 +1,5 @@
 /** @format */
-@import "../../app.scss";
+@import "../../styles/app.scss";
 
 .portfolio {
 	position: relative;
@@ -7,14 +7,7 @@
 	// text-align: center;
 	max-width: 1200px;
 	margin: auto;
-
-	@include tablet {
-		padding: 20px;
-	}
-
-	@include miniLaptop {
-		padding: 20px;
-	}
+	padding: 20px;
 
 	h1 {
 		color: orange;

@@ -49,6 +49,15 @@ const Contact = () => {
 			);
 	};
 
+	const downloadCV = () => {
+		const link = document.createElement("a");
+		link.href = "/My-CV.pdf"; // Replace with the actual path to your CV file
+		link.download = "Etienne's Resume"; // Replace with your desired file name
+		document.body.appendChild(link);
+		link.click();
+		document.body.removeChild(link);
+	};
+
 	return (
 		<motion.div
 			ref={ref}
@@ -64,8 +73,8 @@ const Contact = () => {
 					<span>etiennemaway@gmail.com</span>
 				</motion.div>
 				<motion.div className='item' variants={variants}>
-					<h2>Address</h2>
-					<span>United Arabe Kingdom</span>
+					<h2>Current Address</h2>
+					<span>Kampala/Uganda</span>
 				</motion.div>
 				<motion.div className='item' variants={variants}>
 					<h2>Phone</h2>
@@ -77,7 +86,7 @@ const Contact = () => {
 					className='phoneSvg'
 					initial={{ opacity: 1 }}
 					whileInView={{ opacity: 0 }}
-					transition={{ delay: 3, duration: 1 }}
+					transition={{ delay: 0.5, duration: 1 }}
 				>
 					<svg width='450px' height='450px' viewBox='0 0 32.666 32.666'>
 						<motion.path
@@ -85,7 +94,7 @@ const Contact = () => {
 							fill='none'
 							initial={{ pathLength: 0 }}
 							animate={isInView && { pathLength: 1 }}
-							transition={{ duration: 2 }}
+							transition={{ duration: 1 }}
 							d='M28.189,16.504h-1.666c0-5.437-4.422-9.858-9.856-9.858l-0.001-1.664C23.021,4.979,28.189,10.149,28.189,16.504z
             M16.666,7.856L16.665,9.52c3.853,0,6.983,3.133,6.981,6.983l1.666-0.001C25.312,11.735,21.436,7.856,16.666,7.856z M16.333,0
             C7.326,0,0,7.326,0,16.334c0,9.006,7.326,16.332,16.333,16.332c0.557,0,1.007-0.45,1.007-1.006c0-0.559-0.45-1.01-1.007-1.01
@@ -107,7 +116,7 @@ const Contact = () => {
 					initial={{ opacity: 0 }}
 					whileInView={{ opacity: 1 }}
 					transition={{
-						delay: 3,
+						delay: 1,
 						duration: 1,
 					}}
 					onSubmit={sendEmail}
@@ -115,7 +124,10 @@ const Contact = () => {
 					<input type='text' required name='name' placeholder='name' />
 					<input type='email' required placeholder='email' name='email' />
 					<textarea name='message' required rows={8}></textarea>
-					<button>submit</button>
+					<button type='submit' className='submit'>
+						submit
+					</button>
+
 					{error && "error"}
 					{success && (
 						<motion.span
@@ -129,6 +141,9 @@ const Contact = () => {
 						</motion.span>
 					)}
 				</motion.form>
+				<button className='downloadCV' onClick={downloadCV}>
+					Download My CV
+				</button>
 			</motion.div>
 		</motion.div>
 	);

@@ -1,5 +1,5 @@
 /** @format */
-@import "../../app.scss";
+@import "../../styles/app.scss";
 .navbar {
 	height: 100px;
 	padding: 20px;
@@ -30,6 +30,7 @@
 
 	span {
 		font-weight: bold;
+		z-index: 999;
 
 		@include tablet {
 			display: none;
@@ -42,6 +43,7 @@
 	.social {
 		display: flex;
 		gap: 20px;
+		z-index: 999;
 
 		img {
 			width: 18px;
@@ -49,3 +51,31 @@
 		}
 	}
 }
+
+.social-link {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip {
+	visibility: hidden;
+	width: 120px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	font-size: smaller;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 115%; /* Position the tooltip below the icon */
+	left: 50%;
+	margin-left: -60px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+// .social-link:hover .tooltip {
+// 	visibility: visible;
+// 	opacity: 0.1;
+// }

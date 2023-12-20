@@ -1,5 +1,5 @@
 /** @format */
-@import "../../app.scss";
+@import "../../styles/app.scss";
 
 .services {
 	background: linnear-gradient(#0c0c1d, #111132);
@@ -10,6 +10,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	position: relative;
+	padding: 20px;
 
 	@include miniLaptop {
 		max-width: 900px;
@@ -90,9 +91,13 @@
 			h2 {
 				font-size: 96px;
 				font-weight: 100;
+				color: white;
 
+				@include miniLaptop {
+					font-size: 72px;
+				}
 				@include tablet {
-					font-size: 64px;
+					font-size: 68px;
 				}
 			}
 
@@ -143,15 +148,23 @@
 		}
 
 		.box {
-			padding: 30px;
+			padding: 15px;
 			border: 0.5px solid gray;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+			margin-right: 10px;
+			flex-wrap: wrap;
+			line-height: 1.5rem;
+
+			h2 {
+				margin-bottom: 10px;
+			}
+			p {
+				margin-bottom: 10px;
+			}
 
 			@include tablet {
-				padding: 15px;
-
 				h2 {
 					font-size: 18px;
 				}
@@ -159,6 +172,10 @@
 				p {
 					font-size: 14px;
 				}
+			}
+
+			p {
+				font-weight: 300;
 			}
 
 			@include mobile {

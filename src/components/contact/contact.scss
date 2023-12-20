@@ -1,5 +1,5 @@
 /** @format */
-@import "../../app.scss";
+@import "../../styles/app.scss";
 .contact {
 	display: flex;
 	height: 100%;
@@ -44,7 +44,7 @@
 				font-size: 78px;
 			}
 			@include tablet {
-				font-size: 64px;
+				font-size: 60px;
 			}
 
 			@include mobile {
@@ -59,7 +59,7 @@
 			}
 		}
 		span {
-			font-weight: 300;
+			font-weight: 200;
 
 			@include tablet {
 				font-size: 12px;
@@ -111,7 +111,7 @@
 				}
 			}
 
-			button {
+			.submit {
 				padding: 15px;
 				background: orange;
 				border: none;
@@ -124,9 +124,27 @@
 					padding: 10px;
 				}
 			}
+
 			button:active {
 				background-color: rgb(245, 193, 98);
 			}
+		}
+
+		.downloadCV {
+			padding: 5px;
+			font-size: 10px;
+			width: 20%;
+			background-color: transparent;
+			border: 0.5px solid orange;
+			border-radius: 4px;
+			color: aliceblue;
+			cursor: pointer;
+			margin-top: 20px;
+		}
+
+		.downloadCV:active {
+			background-color: orange;
+			color: black;
 		}
 	}
 }

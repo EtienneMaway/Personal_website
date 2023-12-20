@@ -1,5 +1,5 @@
 /** @format */
-@import "../../app.scss";
+@import "../../styles/app.scss";
 
 .hero {
 	height: calc(100vh - 100px);
@@ -44,22 +44,22 @@
 				display: flex;
 				gap: 10px;
 				button {
-					border: 1px solid rgb(235, 234, 234);
+					border: 1px solid orange;
 					padding: 15px 20px;
 					border-radius: 10px;
 					font-weight: 300px;
 					background: transparent;
-					color: white;
+					color: orange;
 					cursor: pointer;
 					z-index: 999;
 				}
 				button:hover {
-					background: white;
+					background: orange;
 					color: #0c0c1d;
 				}
 				button:active {
 					background: transparent;
-					color: lightgray;
+					color: orange;
 				}
 			}
 

@@ -6,7 +6,7 @@ import { motion, useInView } from "framer-motion";
 
 const variants = {
 	initial: {
-		x: "-200px",
+		x: "-50px",
 		y: "100px",
 		opacity: 0,
 	},
@@ -16,7 +16,7 @@ const variants = {
 		opacity: 1,
 		transition: {
 			duration: 0.8,
-			staggerChildren: 0.1,
+			staggerChildren: 0.2,
 		},
 	},
 };
@@ -33,7 +33,8 @@ const Services = () => {
 		>
 			<motion.div className='textContainer' variants={variants}>
 				<p>
-					I focus on having your brand grow <br /> and more forward
+					Uniting Web2 Ingenuity with Web3 Innovation <br /> NFTs, DeFi, and
+					Seamless Full-Stack Experiences
 				</p>
 				<hr />
 			</motion.div>
@@ -47,9 +48,9 @@ const Services = () => {
 								color: "orange",
 							}}
 						>
-							Unique
+							Creative
 						</motion.b>{" "}
-						ideas
+						Notions
 					</h2>
 				</div>
 				<div className='title'>
@@ -64,17 +65,18 @@ const Services = () => {
 						</motion.b>{" "}
 						Business
 					</h2>
-					<button>WHAT WE DO?</button>
 				</div>
 			</motion.div>
 
 			<motion.div className='listContainer' variants={variants}>
 				<motion.div className='box'>
-					<h2>Branding</h2>
+					<h2>Cross-Chain DApp Development</h2>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam
-						officia odio obcaecati dolor ullam ea minima dolorum quidem
-						accusamus!
+						Have a DApp that spans diverse blockchains? I excel in integrating
+						user interfaces seamlessly, ensuring your decentralized application
+						runs smoothly across chains like Ethereum and Binance Smart Chain.
+						Users will navigate a unified, intuitive interface for a cohesive
+						experience
 					</p>
 					<button>Go</button>
 				</motion.div>
@@ -85,11 +87,13 @@ const Services = () => {
 					// 	color: "#000",
 					// }}
 				>
-					<h2>Branding</h2>
+					<h2>Complete Web Solutions</h2>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam
-						officia odio obcaecati dolor ullam ea minima dolorum quidem
-						accusamus!
+						Seeking a cutting-edge, adaptive web application that excels in
+						every aspect? I craft compelling user interface with the latest
+						frameworks and implement robust server-side logic for efficient data
+						management. Your project will translate Figma&apos;s vision into a
+						dynamic reality.
 					</p>
 					<button>Go</button>
 				</motion.div>
@@ -100,11 +104,13 @@ const Services = () => {
 					// 	color: "#000",
 					// }}
 				>
-					<h2>Branding</h2>
+					<h2>Merge Style, Ensure Security</h2>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam
-						officia odio obcaecati dolor ullam ea minima dolorum quidem
-						accusamus!
+						Elevate your NFT marketplace with a visually captivating frontend
+						design that captivates users. Seamlessly integrate blockchain-backed
+						security for ownership verification and tamper-proof transactions.
+						Your NFTs deserve a marketplace marrying aesthetic appeal with
+						robust web3 functionality.
 					</p>
 					<button>Go</button>
 				</motion.div>
@@ -115,11 +121,13 @@ const Services = () => {
 					// 	color: "#000",
 					// }}
 				>
-					<h2>Branding</h2>
+					<h2>DeFi Platform Development:</h2>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam
-						officia odio obcaecati dolor ullam ea minima dolorum quidem
-						accusamus!
+						Ready to democratize access to decentralized finance? I build DeFi
+						platforms with user-friendly frontends and robust backend smart
+						contract development. Whether it&apos;s lending, borrowing, or yield
+						farming. Your users will effortlessly harness the transformative
+						power of DeFi through a secure platform
 					</p>
 					<button>Go</button>
 				</motion.div>
