@@ -25,15 +25,22 @@ const Services = () => {
   // const ref = useRef();
   // const isInView = useInView(ref, { margin: "-100px" });
 
-  const [isDisabled, setIsDisabled] = useState(false);
-
-  const secondProject = () => {
+  const firstProject = () => {
     window.open("https://github.com/EtienneMaway/Project-threejs-ai", "_blank");
   };
 
-  useEffect(() => {
-    setIsDisabled(true);
-  }, []);
+  const secondProject = () => {
+    window.open(
+      "https://github.com/EtienneMaway/flashLoan-smartContract",
+      "_blank",
+    );
+  };
+  const thirdProject = () => {
+    window.open("https://github.com/EtienneMaway/staking_DAPP", "_blank");
+  };
+  const fourthProject = () => {
+    window.open("https://github.com/EtienneMaway/metaverse_Website", "_blank");
+  };
 
   return (
     <motion.div
@@ -80,17 +87,6 @@ const Services = () => {
       </motion.div>
 
       <motion.div className="listContainer" variants={variants}>
-        <motion.div className="box">
-          <h2>Cross-Chain DApp Development</h2>
-          <p>
-            Have a DApp that spans diverse blockchains? I excel in integrating
-            user interfaces seamlessly, ensuring your decentralized application
-            runs smoothly across chains like Ethereum and Binance Smart Chain.
-            Users will navigate a unified, intuitive interface for a cohesive
-            experience
-          </p>
-          <button disabled={isDisabled}>Go</button>
-        </motion.div>
         <motion.div
           className="box"
           // whileHover={{
@@ -106,24 +102,7 @@ const Services = () => {
             management. Your project will translate Figma&apos;s vision into a
             dynamic reality.
           </p>
-          <button onClick={secondProject}>Go</button>
-        </motion.div>
-        <motion.div
-          className="box"
-          // whileHover={{
-          // 	backgroundColor: "lightgray",
-          // 	color: "#000",
-          // }}
-        >
-          <h2>Merge Style, Ensure Security</h2>
-          <p>
-            Elevate your NFT marketplace with a visually captivating frontend
-            design that captivates users. Seamlessly integrate blockchain-backed
-            security for ownership verification and tamper-proof transactions.
-            Your NFTs deserve a marketplace marrying aesthetic appeal with
-            robust web3 functionality.
-          </p>
-          <button>Go</button>
+          <button onClick={firstProject}>Go</button>
         </motion.div>
         <motion.div
           className="box"
@@ -140,7 +119,41 @@ const Services = () => {
             farming. Your users will effortlessly harness the transformative
             power of DeFi through a secure platform
           </p>
-          <button>Go</button>
+          <button onClick={thirdProject}>Go</button>
+        </motion.div>
+        <motion.div
+          className="box"
+          // whileHover={{
+          // 	backgroundColor: "lightgray",
+          // 	color: "#000",
+          // }}
+        >
+          <h2>Elevate the Website Experience</h2>
+          <p>
+            {/* Elevate your NFT marketplace with a visually captivating frontend
+            design that captivates users. Seamlessly integrate blockchain-backed
+            security for ownership verification and tamper-proof transactions.
+            Your NFTs deserve a marketplace marrying aesthetic appeal with
+            robust web3 functionality. */}
+            Enhance your online presence with captivating web design and
+            superior user experiences. Elevate your website&apos;s aesthetics
+            and functionality, ensuring it not only meets but exceeds your
+            expectations. Let&apos;s build a digital masterpiece together –
+            websites that don&apos;t just look good but offer a seamless and
+            delightful user experience tailored to your needs.
+          </p>
+          <button onClick={fourthProject}>Go</button>
+        </motion.div>
+        <motion.div className="box">
+          <h2>Cross-Chain DApp Development</h2>
+          <p>
+            Have a DApp that spans diverse blockchains? I excel in integrating
+            user interfaces seamlessly, ensuring your decentralized application
+            runs smoothly across chains like Ethereum and Binance Smart Chain.
+            Users will navigate a unified, intuitive interface for a cohesive
+            experience
+          </p>
+          <button onClick={secondProject}>Go</button>
         </motion.div>
       </motion.div>
     </motion.div>
