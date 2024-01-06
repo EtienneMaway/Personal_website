@@ -1,150 +1,158 @@
 /** @format */
 @import "../../styles/app.scss";
 .contact {
-	display: flex;
-	height: 100%;
-	max-width: 1200px;
-	margin: auto;
-	gap: 50px;
-	padding: 20px;
+  display: flex;
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
+  gap: 50px;
+  padding: 20px;
 
-	@include miniLaptop {
-		padding: 20px;
-	}
-	@include tablet {
-		padding: 20px;
-	}
+  @include miniLaptop {
+    padding: 20px;
+  }
+  @include tablet {
+    padding: 20px;
+  }
 
-	@include mobile {
-		width: 100%;
-		flex-direction: column;
-		padding: 5%;
-	}
+  @include mobile {
+    width: 100%;
+    flex-direction: column;
+    padding: 5%;
+  }
 
-	.textContainer {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+  .textContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-		gap: 30px;
+    gap: 30px;
 
-		@include mobile {
-			gap: 20px;
-			justify-content: center;
-			align-items: center;
-			text-align: center;
-		}
+    @include mobile {
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
 
-		h1 {
-			font-size: 100px;
-			line-height: 88px;
+    h1 {
+      font-size: 100px;
+      line-height: 88px;
 
-			@include miniLaptop {
-				font-size: 78px;
-			}
-			@include tablet {
-				font-size: 60px;
-			}
+      @include miniLaptop {
+        font-size: 78px;
+      }
+      @include tablet {
+        font-size: 60px;
+      }
 
-			@include mobile {
-				font-size: 40px;
-			}
-		}
-		h2 {
-			color: white;
+      @include mobile {
+        font-size: 40px;
+      }
+    }
+    h2 {
+      color: white;
 
-			@include tablet {
-				font-size: 20px;
-			}
-		}
-		span {
-			font-weight: 200;
+      @include tablet {
+        font-size: 20px;
+      }
+    }
+    span {
+      font-weight: 200;
 
-			@include tablet {
-				font-size: 12px;
-			}
-		}
-	}
-	.formContainer {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		position: relative;
+      @include tablet {
+        font-size: 12px;
+      }
+    }
+  }
+  .formContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
 
-		@include mobile {
-			padding: 10%;
-		}
+    @include mobile {
+      padding: 10%;
+    }
 
-		.phoneSvg {
-			stroke: orange;
-			position: absolute;
-			z-index: -1;
+    .phoneSvg {
+      stroke: orange;
+      position: absolute;
+      z-index: -1;
 
-			@include mobile {
-				padding: 10px;
-				width: 80%;
-			}
+      @include mobile {
+        padding: 10px;
+        width: 80%;
+      }
 
-			svg {
-				width: 100%;
-			}
-		}
+      svg {
+        width: 100%;
+      }
+    }
 
-		form {
-			display: flex;
-			flex-direction: column;
-			gap: 20px;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
 
-			input,
-			textarea {
-				padding: 20px;
-				border: 1px solid lightgrey;
-				background-color: transparent;
-				border-radius: 5px;
+      input,
+      textarea {
+        padding: 20px;
+        border: 1px solid lightgrey;
+        background-color: transparent;
+        border-radius: 5px;
 
-				color: lightgray;
+        color: lightgray;
 
-				@include mobile {
-					padding: 10px;
-				}
-			}
+        @include mobile {
+          padding: 10px;
+        }
+      }
 
-			.submit {
-				padding: 15px;
-				background: orange;
-				border: none;
-				border-radius: 5px;
-				cursor: pointer;
-				font-weight: 600;
-				font-size: 22px;
+      .submit {
+        padding: 15px;
+        background: orange;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 22px;
 
-				@include mobile {
-					padding: 10px;
-				}
-			}
+        @include mobile {
+          padding: 10px;
+        }
+      }
 
-			button:active {
-				background-color: rgb(245, 193, 98);
-			}
-		}
+      button:hover {
+        background-color: rgba(255, 166, 0, 0.886);
+      }
+      button:active {
+        background-color: transparent;
+        border: 1px solid orange;
+        color: white;
+      }
+    }
 
-		.downloadCV {
-			padding: 5px;
-			font-size: 10px;
-			width: 20%;
-			background-color: transparent;
-			border: 0.5px solid orange;
-			border-radius: 4px;
-			color: aliceblue;
-			cursor: pointer;
-			margin-top: 20px;
-		}
+    .downloadCV {
+      padding: 5px;
+      font-size: 10px;
+      width: 20%;
+      background-color: transparent;
+      border: 0.5px solid orange;
+      border-radius: 4px;
+      color: aliceblue;
+      cursor: pointer;
+      margin-top: 20px;
+    }
 
-		.downloadCV:active {
-			background-color: orange;
-			color: black;
-		}
-	}
+    .downloadCV:hover {
+      background-color: rgba(255, 166, 0, 0.116);
+    }
+    .downloadCV:active {
+      background-color: orange;
+      color: black;
+    }
+  }
 }
