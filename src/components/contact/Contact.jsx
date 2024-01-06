@@ -51,7 +51,7 @@ const Contact = () => {
 
   const downloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/My-CV.pdf"; // Replace with the actual path to your CV file
+    link.href = "/resume.jpg"; // Replace with the actual path to your CV file
     link.download = "Etienne's Resume"; // Replace with your desired file name
     document.body.appendChild(link);
     link.click();
