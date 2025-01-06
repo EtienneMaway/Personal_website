@@ -51,6 +51,12 @@ const Hero = () => {
 				>
 					<motion.h2 variants={textVariants}>Etienne MW</motion.h2>
 					<motion.h1 variants={textVariants}>Software Engineer</motion.h1>
+					<motion.p className='capabilities' variants={textVariants}>
+						Specialized in building <span>Web2</span> and <span>Web3</span>{" "}
+						applications. From traditional web apps to decentralized
+						applications (DApps), I bring your digital vision to life with
+						modern technologies and blockchain integration.
+					</motion.p>
 					<motion.div className='buttons'>
 						<motion.button variants={textVariants}>
 							<a href='#Portfolio'>See the latest works</a>
@@ -69,6 +75,12 @@ const Hero = () => {
 						height={50}
 					/>
 				</motion.div>
+				<div className='decorationContainer'>
+					<div className='circle'></div>
+					<div className='circle'></div>
+					<div className='circle'></div>
+					<div className='centerDot'></div>
+				</div>
 			</div>
 
 			<motion.div
@@ -79,10 +91,6 @@ const Hero = () => {
 			>
 				<h2>Web2 & Web3 Development</h2>
 			</motion.div>
-
-			<div className='imageContainer'>
-				<img src='/hero2.png' alt='hero pic' />
-			</div>
 		</div>
 	);
 };
